@@ -1,0 +1,67 @@
+Step 1: testing for a unit root in gdp
+
+Augmented Dickey-Fuller test for gdp
+including 4 lags of (1-L)gdp
+sample size 70
+unit-root null hypothesis: a = 1
+
+  test with constant 
+  model: (1-L)y = b0 + (a-1)*y(-1) + ... + e
+  estimated value of (a - 1): 0.0431738
+  test statistic: tau_c(1) = 1.53614
+  asymptotic p-value 0.9994
+  1st-order autocorrelation coeff. for e: -0.034
+  lagged differences: F(4, 64) = 88.469 [0.0000]
+
+Step 2: testing for a unit root in unemp
+
+Augmented Dickey-Fuller test for unemp
+including 4 lags of (1-L)unemp
+sample size 70
+unit-root null hypothesis: a = 1
+
+  test with constant 
+  model: (1-L)y = b0 + (a-1)*y(-1) + ... + e
+  estimated value of (a - 1): -0.0746274
+  test statistic: tau_c(1) = -1.48841
+  asymptotic p-value 0.5397
+  1st-order autocorrelation coeff. for e: -0.014
+  lagged differences: F(4, 64) = 6.998 [0.0001]
+
+Step 3: cointegrating regression
+
+Cointegrating regression - 
+OLS, using observations 2005:1-2023:3 (T = 75)
+Dependent variable: gdp
+
+             coefficient   std. error   t-ratio   p-value 
+  --------------------------------------------------------
+  const       187341        9446.58     19.83     4.07e-31 ***
+  unemp       −11473.3      1284.77     −8.930    2.52e-13 ***
+
+Mean dependent var   104100.4   S.D. dependent var   19088.32
+Sum squared resid    1.29e+10   S.E. of regression   13286.01
+R-squared            0.522091   Adjusted R-squared   0.515545
+Log-likelihood      −817.4918   Akaike criterion     1638.984
+Schwarz criterion    1643.619   Hannan-Quinn         1640.834
+rho                  0.823898   Durbin-Watson        0.356912
+
+Step 4: testing for a unit root in uhat
+
+Augmented Dickey-Fuller test for uhat
+including 4 lags of (1-L)uhat
+sample size 70
+unit-root null hypothesis: a = 1
+
+  test without constant 
+  model: (1-L)y = (a-1)*y(-1) + ... + e
+  estimated value of (a - 1): -0.0839559
+  test statistic: tau_c(2) = -1.11859
+  asymptotic p-value 0.8778
+  1st-order autocorrelation coeff. for e: -0.076
+  lagged differences: F(4, 65) = 5.753 [0.0005]
+
+There is evidence for a cointegrating relationship if:
+(a) The unit-root hypothesis is not rejected for the individual variables, and
+(b) the unit-root hypothesis is rejected for the residuals (uhat) from the 
+    cointegrating regression.
