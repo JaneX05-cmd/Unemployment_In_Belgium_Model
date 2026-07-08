@@ -1,7 +1,7 @@
 # Unemployment_In_Belgium_Model
 Wersja Polska (README_pl.md)
-🧠 Economic Interpretation
 
+🧠 Economic Interpretation
 Okun's Law (d_l_gdp_2 = -4.32): A 1% acceleration in GDP growth two quarters prior results in a 0.043 percentage point drop in the current unemployment rate, demonstrating the delayed transmission of economic output to the labor market.
 Procyclical Wages (d_l_wcost_3 = -0.18): Higher labor costs reflect an overheating economy and a "candidate's market." This economic expansion drives a drop in the unemployment rate 3 quarters later.
 The Core Stabilization Mechanism (d_unemp_1 = -0.46): The negative autoregressive coefficient proves the process is strictly stationary and mean-reverting. A 1 p.p. spike in unemployment last quarter triggers an automatic cooling off of 0.46 p.p. this quarter, preventing the forecast from exploding.
