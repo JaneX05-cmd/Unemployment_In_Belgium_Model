@@ -3,7 +3,7 @@
 [English version](README.md)
 
 ## 📌 Cel projektu
-Głównym celem projektu jest badanie i prognozowanie zmiennych makroekonomicznych kształtujących dynamikę stopy bezrobocia w Belgii[cite: 12]. 
+Głównym celem projektu jest badanie i prognozowanie zmiennych makroekonomicznych kształtujących dynamikę stopy bezrobocia w Belgii. 
 
 ## 📊 Opis danych i zmiennych
 Analiza opiera się na 84 obserwacjach kwartalnych obejmujących okres od Q1 2005 do Q4 2025. 
